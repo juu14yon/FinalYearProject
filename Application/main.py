@@ -8,7 +8,7 @@ from PIL import Image
 from skimage.transform import SimilarityTransform
 from scipy.ndimage import gaussian_filter1d
 
-from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow, QMessageBox, QColorDialog, QFileDialog, QPushButton, QLabel
+from PyQt5.QtWidgets import QApplication, QMainWindow, QColorDialog, QFileDialog, QPushButton, QLabel
 from PyQt5.QtCore import Qt, QThread, pyqtSignal, QRect, QPoint
 from PyQt5.QtGui import QPixmap, QImage, QIcon
 from PyQt5 import QtCore
@@ -218,13 +218,13 @@ class Window(QMainWindow, Ui_MainWindow):
 
         # Set camera position
         if self.settings["camPos"] == "tl":
-            self.topLeftButton.setStyleSheet(self.cssBackground % self.green)
+            self.topLeft()
         elif self.settings["camPos"] == "tr":
-            self.topRightButton.setStyleSheet(self.cssBackground % self.green)
+            self.topRight()
         elif self.settings["camPos"] == "bl":
-            self.botLeftButton.setStyleSheet(self.cssBackground % self.green)
+            self.botLeft()
         else:
-            self.botRightButton.setStyleSheet(self.cssBackground % self.green)
+            self.botRight()
 
         # Set overlay color
         self.overColorLabel.setStyleSheet(self.cssBackground % self.settings["color"])
