@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>About</title>
+        <link rel="icon" href="appIcon.svg">
+        <style>
+            * {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            body {
+                padding: 20px 50px;
+                background-color: #a0d2eb;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                margin-top: 0;
+                color: #8458B3;
+            }
+            p, li {
+                font-size: 18px;
+                color: #494d5f;
+            }
+            li {
+                margin-top: 5px;
+            }
+            img {
+                border: 1px solid #8458B3;
+            }
+
+            .section {
+                background-color: #e5eaf5;
+                border-radius: 20px;
+                padding: 20px;
+                margin-bottom: 10px;
+            }
+            .imgsolo {
+                width: 70vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .doublecontainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+            }
+            .imgdouble {
+                width: 35vw;
+            }
+            .caption {
+                text-align: center;
+                margin-top: 10px;
+            }
+            .top h1, .top h3 {
+                color:#4B0780;
+                text-align: center;
+                margin-top: 20px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <img src="appIcon.svg" style="border: 0; display: block; margin-left: auto; margin-right: auto; width: 200px; padding-left: 20px;">
+            <h1>Third Eye</h1>
+            <h3>About App and User Manual</h3>
+        </div>
+        <div class="section">
+            <h1>About app</h1>
+            <p><b>Third eye</b> is a video recording application. It was created as a part of the Final Year Project for a BS in Computer Science at the University of Central Asia.</p>
+            <p>
+                The aim of the project and this application is development and implementation of real-time gaze tracking on a laptop screen as an additional method of proctoring online tests and examinations. 
+            </p>
+            <p>Learn more by visiting the <a href="https://github.com/juu14yon/FinalYearProject">GitHub repository</a> for this project</p>
+        </div>
+
+        <div class="section">
+            <h1>About video recording</h1>
+            <p>
+                <b>Third eye</b> records your screen and web camera, arranges them according to the settings on the right side of the main window,
+                and saves the recorded video on your disk.
+            </p>
+            <h3>Why does the app crash when I start recording?</h3>
+            <p>The #1 reason for crashing is when the application cannot access your web camera.</p>
+            <p>
+                If you are using an antivirus, try checking logs for untrusted applications. If this app is refused access to the web camera, add it as an exception or pause
+                antivirus protection. Do not worry, this application is 100% safe, which you can verify by looking at the source code available on <a href="https://github.com/juu14yon/FinalYearProject">GitHub</a>.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>About gaze tracking</h1>
+            <p>One of the main features of this app is gaze tracking which highlights the place on the screen at which the user is looking and detects when the user is not looking at the screen.</p>
+            <p>
+                Unfortunately, accurate gaze tracking was not achieved during this project and its improvement is left to future contributions. 
+                The development process and implementation methods are documented in the FYP report, that can be used as a guide and reference.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Guide: buttons and their uses</h1>
+            <img src="screenshot.png" class="imgsolo">
+            <h3 class="caption">Interface at launch</h3>
+
+            <ol>
+                <li>Real-time feedback of your recorded video</li>
+                <li>Recording status and control (start/stop)</li>
+                <li>Gaze-tracking overlay settings - color</li>
+                <li>Web camera settings - position on the recording</li>
+                <li>Other settings and functions:
+                    <ul>
+                        <li>Change main window color theme (light/dark)</li>
+                        <li>Open the folder where your recordings and logs are saved</li>
+                        <li>Change the output folder to a different one</li>
+                        <li>Start gaze tracking calibration</li>
+                        <li>Close the application</li>
+                    </ul>
+                </li>
+            </ol>
+
+            Any changes you make are saved when you close the app so that on the next launch your app looks just as you have left it :)
+        </div>
+
+        <div class="section">
+            <h1>Overlay color</h1>
+            <img src="colorpicker.png" class="imgsolo">
+            <p>
+                This widget allows you to change the color of the gaze-tracking overlay. The rectangle shows the current color. The button 
+                opens a color picker in a pop-up window.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Webcamera position</h1>
+            <div class="doublecontainer">
+                <img src="webcam1.png" class="imgdouble">
+                <img src="webcam2.png" class="imgdouble">
+            </div>
+            <p>
+                This widget allows you to change the position of the web camera in the recorded video. 
+                Four buttons correspond to the the web camera position. The screenshots above show web camera in the bottom right and top left corners.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Themes</h1>
+            <img src="theme.png" class="imgsolo">
+            <p>
+                In the previous examples you saw the app window with Light theme applied. If you prefer darker colors, you can change the current theme
+                by clicking the "Change theme" button.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Working with folders</h1>
+            <div class="doublecontainer">
+                <img src="directory.png" class="imgdouble">
+                <img src="changedir.png" class="imgdouble">
+            </div>
+            <p>
+                The first screenshot demonstrates how "Open output folder" button works. 
+                The second image shows the pop-up window where you can select other folder to save your recordings. 
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Start/stop recording</h1>
+            <img src="running.png" class="imgsolo">
+            <p>
+                Start and stop your recording by pressing the middle button below the main frame.
+                Remember that the widgets on the right side of the app are disabled when the recording is running.
+                To change any settings, stop the running recording first.
+            </p>
+        </div>
+    </body>
+</html>

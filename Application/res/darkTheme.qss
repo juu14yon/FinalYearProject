@@ -1,0 +1,64 @@
+QWidget#centralwidget {
+    background-color: #0e0e0e;
+}
+
+QWidget#overlayWidget, QWidget#webcamWidget, QWidget#otherWidget {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+QLabel#frame {
+    background-color: #000000;
+    border: 1px solid #545454;
+}
+
+QLabel#recHintLabel, QLabel#recStatLabel {
+    font-size: 20px;
+}
+
+QLabel#recHintLabel, QLabel#recStatLabel, QLabel#label, QLabel#label_2, QLabel#label_3  {
+    color: #e1e1e1;
+}
+
+QLabel#overColorLabel {
+    border-radius: 2px;
+}
+
+QLabel#label_5 {
+    border: 1px solid #545454;
+    background-color: #000000;
+    border-radius: 0;
+}
+
+QPushButton#startButton {
+    color: #e1e1e1;
+    font-size: 20px;
+    background-color: #1e1e1e;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #545454;
+}
+
+QPushButton#overColorButton, QPushButton#themeButton, QPushButton#folderButton, QPushButton#changeDirButton, QPushButton#calibrButton {
+    border-radius: 2px;
+    background-color: #1e1e1e;
+    border: 1px solid #545454;
+    color: #e1e1e1;
+}
+
+QPushButton#exitButton {
+    border-radius: 2px;
+    border: 1px solid #000000;
+    background-color: #ff5555;
+    color: #000000;
+}
+
+QPushButton#topLeftButton, QPushButton#botLeftButton, QPushButton#topRightButton, QPushButton#botRightButton {
+    background-color: #545454;
+    border-radius: 0;
+}
+
+QMenuBar, QMenu {
+    background-color: #000000;
+    color: #e1e1e1;
+}
