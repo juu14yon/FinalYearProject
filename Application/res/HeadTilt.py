@@ -176,8 +176,8 @@ class HeadTilt:
             leftCoords = center_left + lEyeVec * 11
             rightCoords = center_right + rEyeVec * 11
 
-            leftCoords[2] = min(12, leftCoords[2])
-            rightCoords[2] = min(12, rightCoords[2])
+            # leftCoords[2] = min(12, leftCoords[2])
+            # rightCoords[2] = min(12, rightCoords[2])
 
             self.vecLeft = leftCoords.flat
             self.vecRight = rightCoords.flat
