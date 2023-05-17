@@ -9,9 +9,18 @@ In partial fulfillment of the requirement for the BS in Computer Science, UCA
 <b>Author:</b> Alexandra Yugay<br>
 <b>Supervisor:</b> Dr. Ayman Aljarbouh<br>
 <b>Co-supervisor:</b> Dr. Muhammad Fayaz<br>
+
+## Project setup
+To run this project on your machine, firstly install necessary libraries and modules from requirements.txt file: <br>
+<pre>
+pip install -r requirements.txt
+</pre>
 <br>
-<br>
-<br>
+<b>Sometimes ffmpeg installed using pip is not recognized. In that case, try different methods:</b><br><br>
+<ul>
+    <li> If you are using Anaconda, try <pre>conda install ffmpeg</pre></li>
+    <li> If previous solution did not work, install ffmpeg full build from the official website. Unzip the file, copy it to your disk and in Environment Variables add new PATH pointing to the bin folder in ffmpeg. For example: <pre>C:\ffmpeg\bin </pre></li>
+</ul>
 
 ____________________________________________
 <i>Copyright 2023</i><br>
