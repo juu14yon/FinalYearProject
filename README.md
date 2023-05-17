@@ -13,7 +13,8 @@ In partial fulfillment of the requirement for the BS in Computer Science, UCA
 <br>
 <br>
 
-Copyright 2023<br>
+____________________________________________
+<i>Copyright 2023</i><br>
 <br>
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
